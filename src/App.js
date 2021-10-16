@@ -8,7 +8,7 @@ function App() {
   return (
     <main>
       <h1>Our Menu</h1>
-      <div></div>
+      <div className="underline"></div>
       <Menu meals={meals} />
     </main>
   );

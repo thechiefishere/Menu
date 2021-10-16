@@ -1,12 +1,17 @@
 const Meal = ({ meal }) => {
   return (
     <article>
-      <img src={meal.img} alt={meal.title} />
-      <div>
-        <h3>{meal.title}</h3>
-        <p>{meal.price}</p>
+      <img className="image" src={meal.img} alt={meal.title} />
+      <div className="details">
+        <div className="price">
+          <h3 className="list">{meal.title}</h3>
+          <p className="list">${meal.price}</p>
+        </div>
+        <div className="desc">
+          <hr />
+          <p>{meal.desc}</p>
+        </div>
       </div>
-      <p>{meal.desc}</p>
     </article>
   );
 };

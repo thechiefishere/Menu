@@ -24,9 +24,11 @@ const Menu = ({ meals }) => {
   return (
     <section>
       <Categories categories={["all", ...categories]} show={show} />
-      {mealsToShow.map((meal) => (
-        <Meal meal={meal} />
-      ))}
+      <div className="meal-container">
+        {mealsToShow.map((meal) => (
+          <Meal meal={meal} />
+        ))}
+      </div>
     </section>
   );
 };

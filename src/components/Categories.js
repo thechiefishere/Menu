@@ -1,8 +1,12 @@
 const Categories = ({ categories, show }) => {
   return (
-    <ul>
+    <ul className="categories">
       {categories.map((category) => {
-        return <li onClick={() => show(category)}>{category}</li>;
+        return (
+          <li className="list" onClick={() => show(category)}>
+            {category}
+          </li>
+        );
       })}
     </ul>
   );
